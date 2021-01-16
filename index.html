@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Talabat - Javier Sanchez Project</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="talabaticon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <style>
+
+        .h1 {
+            color: white;
+        }
+
+        .pd-parallax{
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 500px;
+            margin: 0;
+            padding: 0;
+        }
+        .pd-parallax h1{
+            background-color: #0d3fda;
+            text-align: center;
+            color: white;
+            padding:20px;
+        }
+        .pd-parallax .pd-title{
+            padding-top: 150px;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+<!--- Navigation BAR-->
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color: #ff5a00; color:white" id='navbartext'>
+    <a class="navbar-brand" href=""> <img src="talabat.png" width="90" height="40" alt="Talabat Icon"  target="_blank"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="d-flex flex-row order-2 order-lg-3">
+        <ul class="navbar-nav flex-row">
+            <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-facebook"></span></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-twitter"></span></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-youtube"></span></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-linkedin"></span></a></li>
+        </ul>
+        <!--- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>--->
+    </div>
+
+    <div class="collapse navbar-collapse" style="color: white" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto text-md-center text-left" >
+        <li class="nav-item active">
+          <a class="nav-link" style="color: white" href="Rewards.html" target="_blank"><b>Rewards Analytics Assessment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp|&nbsp</b><span class="sr-only">(current)</span></a>
+          <li class="nav-item active">
+            <a class="nav-link" style="color: white" href="Road.html" target="_blank"><b>People Analytics Framework&nbsp;&nbsp;&nbsp;&nbsp;&nbsp|&nbsp</b><span class="sr-only">(current)</span></a>
+   
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                <b>Resources</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color: white"  target="_blank" id='shadow1'>   
+              <a class="dropdown-item" href = "https://public.tableau.com/profile/javier8852#!/vizhome/Together_16101573177970/Dashboard3" target="_blank"><img src="tableau.png" width="30" height="30"  target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Tableau Dashboard</a>      
+              <a class="dropdown-item" href="https://www.kaggle.com/perfectjav/notebookb4bccc4ab2" target="_blank" download><img src="kaggle.png" width="30" height="30"  target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Jupyter Notebook</a>
+              <a class="dropdown-item" href="https://1drv.ms/u/s!AjuCeGah2LdlgQbzBW0M4dmVGytH" target="_blank" download><img src="python.png" width="30" height="30"  target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Python Source Code</a>
+              <a class="dropdown-item" href = "alteryx.png" target="_blank"><img src="alteryx.jpg" width="30" height="30"  target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Alteryx Flowchart</a>    
+              <a class="dropdown-item" href = "https://1drv.ms/x/s!AjuCeGah2LdlgQe4bKdcB9KJjywL?e=wrGuZy" target="_blank"><img src="excel.png" width="30" height="30"  target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Database</a>    
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                <b>Contact Me</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color: white"  id='shadow1'>   
+              <a class="dropdown-item" href = "mailto: lic_sanchez@outlook.com" target="_blank"><img src="gmail.png" width="30" height="30" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Email</a>      
+              <a class="dropdown-item" href = "whatsapp://call?number=5525165129" target="_blank"><img src="wa.png" width="30" height="30" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Whatsapp</a>   
+              <a class="dropdown-item" href = "https://www.linkedin.com/in/javiersanchezmdeo/" target="_blank"><img src="lk2.png" width="30 target="_blank"" height="30">&nbsp;&nbsp;&nbsp;&nbsp;Linkedin</a> 
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="JS_CV.pdf" target="_blank"><img src="cv.png" width="30" height="30"  target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Javier Sanchez CV</a>
+              <a class="dropdown-item" href="thanks.png" target="_blank"><img src="yo1.png" width="30" height="30"  target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Letter</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </nav>
+
+
+<!---End of Nav Bar-->
+
+
+
+    <div class = 'pd-parallax' data-parallax-image='landing.png'>
+    </div>
+
+    <div class = 'pd-parallax' data-parallax-image='dataa.jpg'>
+    </div>
+
+
+
+        <p style='background-color: #e20095; text-align: center; color:white'><strong>All the Python Source Code, Tableau Dashboards and raw files can be found via links on the nav bardropdown menu.</strong></p>
+
+    <div class='container pt-3 pb-3'>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <h2 style='text-align: center'>Orders & Revenue</h2>
+        <p style='color:white'>.</p>
+        <h5 style='text-align: center'>Total Orders: 127,079&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Total Revenue: €2,419,503&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Average Revenue per Basket: €19.04</h5>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <p>We kick off the analysis with the Macro buckets: Countries. The exploratory analysis shows that the majority of orders have come through Kuwait followed by the United Arab Emirates.
+            Keeping this in mind both countries contribute with 65% of all revenue, but surprisingly Saudi Arabia and Qatar tops the average revenue "per order".
+        <p>Total revenue coming from Delivery Fees is €160,629, being €1.26 the average. </p>
+        <p>Regarding Discounts, 5,236 users applied for it, amassing a total amount of €33,311. It is note worthy that Chili's is the #1 Vendor that offers and applies discounts.</p>
+        <p>Only 0.39% of users did more than 3 orders in the period, and only 5.32% of users did more than 2 orders.</p>
+
+            <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+    </div>
+
+    <div class = 'pd-parallax' data-parallax-image='map1.png'>
+        <div class='container'>
+            <div class='row pt-4 pb-4'>
+                <div class='col-md-4'>
+                    <a href='https://public.tableau.com/profile/javier8852#!/vizhome/Together_16101573177970/Dashboard3' target="_blank">
+                    <div class='card' style='border: none'>
+                        <div class='card-body'>
+                            <h3 class='card-title' style="text-align:center; color:#0d3fda">Orders</h3>
+                        </div>
+                        <img class='card-img-top' src='graph2.png'/>
+                    </div>
+                    </a>
+                </div>    
+                <div class='col-md-4'>
+                    <a href='https://public.tableau.com/profile/javier8852#!/vizhome/Together_16101573177970/Dashboard3' target="_blank">
+                    <div class='card' style='border: none'>
+                        <div class='card-body'>
+                            <h3 class='card-title' style="text-align:center; color: #e20095">Total $ Basket</h3>
+                        </div>
+                        <img class='card-img-top' src='graph4.png'/>
+                    </div>
+                    </a>
+                </div> 
+                <div class='col-md-4'>
+                    <a href='https://public.tableau.com/profile/javier8852#!/vizhome/Together_16101573177970/Dashboard3' target="_blank">
+                    <div class='card' style='border: none'>
+                        <div class='card-body'>
+                            <h3 class='card-title' style="text-align:center;  color:#ff5a00">Avg $ per Basket</h3>
+                        </div>
+                        <img class='card-img-top' src='graph6.png'/>
+                    </div>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class='container pt-3 pb-3'>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <h3 style='text-align: center'>Sales by Month, Day of the Week and Hour</h3>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <p>Reviewing the data we can assess that there is a huge spike on July, being July 10 the day with the most highest amount of revenue. In these days the mayority of the orders came from McDonald's, KFC, Pizza Hut and Burger King.</p>
+        <p>We can see also that Thursday and Friday are the stronger business days for Talabat</p>
+        <p>Also, as expected, Talabat's services are not used equal throughout the day. We can see high sales from 1pm to 5pm and then a spike from 7 pm to 9 pm, being 8pm the Talabat's top hour for doing business. After 9pm we can see a decline in ordershitting rock bottom at 4am and 5 am.</p>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>    
+    </div>
+
+    <div class = 'pd-parallax' data-parallax-image='grey.png' id='shadow'>
+        <table class="action_table">
+            <tbody>
+                <tr class="header_row" style='color:transparent'>
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <div class="container" >
+            <div class="container-lg my-3" >
+                
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+                    <div class="row"></div>
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner" >
+                        <a href='https://public.tableau.com/profile/javier8852#!/vizhome/Together_16101573177970/Dashboard3' target="_blank">
+                        <div class="carousel-item active" id='img-container'>
+                            <img src="g1.png" alt="First Slide">
+                        </div>
+                        <div class="carousel-item" id='img-container'>
+                            <img src="g3.png" alt="Second Slide">
+                        </div>
+                        <div class="carousel-item" id='img-container'>
+                            <img src="g2.png" alt="Third Slide">
+                        </div>
+                        </a>
+                    </div>
+                    <table class="action_table" style='color:transparent'>
+                        <tbody>
+                            <tr class="header_row">
+                                <td>.</td>
+                            </tr>          
+                        </tbody>
+                    </table>
+                    <table class="action_table" style='color:transparent'>
+                        <tbody>
+                            <tr class="header_row">
+                                <td>.</td>
+                            </tr>          
+                        </tbody>
+                    </table>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Image Zoom using Javascript, Not used because of time
+    <script>
+        var options = {
+            width: 1000,
+            height: 1000,
+            zoomWidth: 500,
+            offset: {vertical: 0, horizontal: 10},
+            scale: 1.5
+        }
+        new ImageZoom(document.getElementById('img-container'), options );
+    </script>
+    -->
+
+
+    <div class='container pt-3 pb-3'>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <h2 style='text-align: center'>Vendors</h2>
+        <p style='color:white'>.</p>
+        <h5 style='text-align: center'>Total Vendors: 8,575</h5>
+
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <p>There is no denying that our services are used not only by many people but also by many restaurants and food & beverage companies. Having said that, only 10 out of 8,575 restaurants make up 30% of all orders:</p>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <table style="width:100%; text-align: center; background-color:#ffeee5" bordercolor=#f5f5f5>
+            <tr>
+              <th>Top #1</th>
+              <th>Top #2</th> 
+              <th>Top #3</th>
+              <th>Top #4</th>
+              <th>Top #5</th>
+              <th>Top #6</th>
+              <th>Top #7</th>
+              <th>Top #8</th>
+              <th>Top #9</th>
+              <th>Top #10</th>
+            </tr>
+            <tr>
+              <td>McDonald's</td>
+              <td>KFC</td>
+              <td>Hardee's</td>
+              <td>Pizza Hut</td>
+              <td>Burger King</td>
+              <td>Not Available</td>
+              <td>Talabat Mart</td>
+              <td>Subway</td>
+              <td>Domino's Pizza</td>
+              <td>Papa John's</td>
+            </tr>
+            <tr>
+              <td>7.64%</td>
+              <td>5.68%</td>
+              <td>3.50%</td>
+              <td>3.28%</td>
+              <td>3.17%</td>
+              <td>1.93%</td>
+              <td>1.35%</td>
+              <td>1.34%</td>
+              <td>0.89%</td>
+              <td>0.80%</td>
+            </tr>
+          </table>
+          <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <p>Top Chains by Region:</p>
+
+        <table style="width:100%; text-align: center; background-color:#afdffe" bordercolor=#f5f5f5>
+            <tr>
+              <th>Kuwait</th>
+              <th>United AE</th> 
+              <th>Egypt</th>
+              <th>Bahrain</th>
+              <th>Qatar</th>
+              <th>Oman</th>
+              <th>Jordan</th>
+              <th>Saudi Arabia</th>
+            </tr>
+            <tr>
+              <td>McDonald's</td>
+              <td>KFC</td>
+              <td>McDonald's</td>
+              <td>McDonald's</td>
+              <td>McDonald's</td>
+              <td>McDonald's</td>
+              <td>McDonald's</td>
+              <td>McDonald's</td>
+            </tr>
+            <tr>
+              <td>KFC</td>
+              <td>McDonald's</td>
+              <td>KFC</td>
+              <td>Jasmi's</td>
+              <td>KFC</td>
+              <td>KFC</td>
+              <td>KFC</td>
+              <td>KFC</td>
+            </tr>
+          </table>
+        
+          <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <p>Get more information about the <strong>Top 4</strong>:</p>
+
+    
+        <div class='container pt-3 pb-3'>
+            <div class="container marketing">
+                
+                
+
+
+
+                
+                <div class="row mb-2"'>
+                    <div class="col-md-6">
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250" style='border: none; background-color:  #db0008;'>
+                        <div class="card-body d-flex flex-column align-items-start">    
+                            <h3 class="mb-0">
+                            <a href="http://www.mcdonalds.com" target="_blank" style='color: white  '>McDonald's</a>
+                          </h3>
+                          <p class="card-text mb-auto"></p>
+                          <p class="card-text mb-auto"  style='color: white  '><strong>Total Orders: 9,706</strong></p>
+                          <p class="card-text mb-auto" style='color: white'><strong>Average Basket: € 14</strong></p>
+                          <p class="card-text mb-auto"  style='color: white  '>Click on the logo to know more.</p>
+                        </div>
+                        <a href="mcgraph.png" target="_blank"><img class="card-img-right flex-auto d-none d-md-block" data-src="mc.png" alt="Card image cap" width="205" height="205" src='mc.png'></a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250" style='border: none; background-color: #a71933;'>
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h3 class="mb-0">
+                            <a href="http://www.kfc.com" target="_blank" style='color: white'>KFC</a>
+                          </h3>
+                          <p class="card-text mb-auto"></p>
+                          <p class="card-text mb-auto" style='color: white'><strong>Total Orders: 7,218</strong></p>
+                          <p class="card-text mb-auto" style='color: white'><strong>Average Basket: € 16</strong></p>
+                          <p class="card-text mb-auto" style='color: white'>Click on the logo to know more.</p>
+                        </div>
+                        <a href="kfcgraph.png" target="_blank"><img class="card-img-right flex-auto d-none d-md-block" data-src="mc.png" alt="Card image cap" width="205" height="205" src='kfc.png'></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-2"'>
+                    <div class="col-md-6">
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250" style='border: none; background-color: black;'>
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h3 class="mb-0">
+                            <a href="http://www.hardees.com" target="_blank" style='color: white'>Hardee's</a>
+                          </h3>
+                          <p class="card-text mb-auto"></p>
+                          <p class="card-text mb-auto" style='color: white'><strong>Total Orders: 4,452</strong></p>
+                          <p class="card-text mb-auto" style='color: white'><strong>Average Basket: € 15</strong></p>
+                          <p class="card-text mb-auto" style='color: white'>Click on the logo to know more.</p>
+                        </div>
+                        <a href="Hardeesgraph.png" target="_blank"><img class="card-img-right flex-auto d-none d-md-block" data-src="mc.png" alt="Card image cap" width="205" height="205" src='hardees.png'></a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250" style='border: none; background-color:#ee3d41;'>
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h3 class="mb-0">
+                            <a href="http://www.pizzahut.com" target="_blank"  style='color: white;'>Pizza Hut</a>
+                          </h3>
+                          <p class="card-text mb-auto"></p>
+                          <p class="card-text mb-auto"  style='color: white'><strong>Total Orders: 4,168</strong></p>
+                          <p class="card-text mb-auto" style='color: white'><strong>Average Basket: € 21</strong></p>
+                          <p class="card-text mb-auto"  style='color: white'>Click on the logo to know more.</p>
+                        </div>
+                        <a href="phgraph.png" target="_blank"><img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" width="205" height="205" src='ph3.png'></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+            </div>
+        </div>    
+    </div>
+
+    <div class="dropdown-divider"></div>
+
+    <div class='container pt-3 pb-3' >
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <h2 style='text-align: center'>Aside from the available data, ¿What other features would you include for an effective segmentation?</h2>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <p>As some people and managers tend to say: "There is not such thing as too much information", and we can say that within Analytics it is mostly true, specially regarding Ecommerce. There is many and many more information that we can include to the database in order to gain greater insights and informacion about our clients. Analytics can provide Talabat with data-driven insights into how shoppers interact with the site and app — both the good and the bad. These insights take the guesswork and subjectivity out of website and tech optimization, and uncover opportunities for improvement and innovation.</p>
+        <p>The hard truth that most companies tend to overlook is tha in this digital age we can collect as much data as we want — and use it effectively — but if we dont use it with the purpose of listening to what our customers are saying, we will have a hard time giving them what they are looking for — and they may end up going elsewhere to find it.</p>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <p>A few examples of the information that we can include for an effective segmentation are:</p>
+
+        
+    </div>
+
+    <div class = 'pd-parallax' data-parallax-image='Talabat_fondo.png'>
+        <div class='container'>
+            <div class='row pt-4 pb-4'style='border: none;'>
+                <div class='col-md-4'style='border: none;'>
+                    <div class='card' style='border: none;'>
+                        <img class='card-img-top' src='people7.jpg'/>
+                        <div class='card-body'>
+                            <h3 class='card-title' style="text-align:center;">Payment Method</h3>
+                            <p>Payment analytics can provide insight into how our products are performing in different regions and how different payment types and currencies are contributing the overall revenue.</a></p>
+                            <p>Based on the this information we can create a plan to expand our reach and overall strategy, supporting international customers better.</a></p>
+                            
+                        </div>
+                    </div>
+                </div>    
+                <div class='col-md-4'style='border: none;'>
+                    <div class='card'style='border: none;'>
+                        <img class='card-img-top' src='people9.jpg'/>
+                        <div class='card-body'>
+                            <h3 class='card-title' style="text-align:center;">Products</h3>
+                            <p>Knowing which products do people commonly buy in a particular country or day would can help us understand better our customers behavior and then we can give offers and discounts only on the product that people will mostly prefer to buy rather than giving to it to random products.</a></p>
+                            <p style='color:white'>.    </p>
+                        </div>
+                    </div>
+                </div> 
+                <div class='col-md-4'style='border: none;'>
+                    <div class='card'style='border: none;'>
+                        <img class='card-img-top' src='people2.jpg'/>
+                        <div class='card-body'>
+                            <h3 class='card-title' style="text-align:center;">Demographics</h3>
+                            <p>Demographics are a key part of the business and marketing strategy. Demographics help Talabat identify the individual members of the audience by key characteristics, wants and needs.</a></p>
+                            <p>We can use demographics to refine our marketing budget and make more targeted investment decisions about how to engage our audience.</a></p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class = 'pd-parallax' data-parallax-image='thanks2.png'>
+        <div class="row"></div>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <table class="action_table" style='color:transparent'>
+            <tbody>
+                <tr class="header_row">
+                    <td>.</td>
+                </tr>          
+            </tbody>
+        </table>
+        <a href='thanks.png' target="_blank"><div class='pd-title'><h1  style='background-color: #d5d801' id='shadow1'>Thank you</h1></div></a>
+    </div>
+    
+    <footer class='text-center pt-4 pb-3' style='background-color: #262626'>
+        <h3 style="color:white"><b>Javier Sanchez</b></h3>p>
+    </footer>
+
+    <script>
+        Array.prototype.forEach.call(document.querySelectorAll('.pd-parallax'), function(elem) {
+            elem.style.backgroundImage = 'url('+elem.getAttribute('data-parallax-image')+')';
+        })
+    </script>
+    
+    
+</body>
+</html>
